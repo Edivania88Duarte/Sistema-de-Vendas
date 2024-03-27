@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+        
+
+    <title>Sistema de Vendas</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="./index.html" class="nameLogo">Global Vendas</a>
+        </nav>
+        <a href="#" onclick="showClient()">+ Clientes</a>
+        <a href="#" onclick="showProduct()">+ Produtos</a>
+        <a href="#" onclick="showOrders()">+ Pedidos</a>       
+    </header>
+
+
+    <div class="boxHome">
+
+        <img src="./assets/capaSite.png" alt="">
+
+    </div>
+
+
+
+    <div class="boxProduct" id="divProduct" style="display:none">
+        <div class="box">
+            <p>Cadastrar Produtos
+            </p>
+            <input type="number" id="productId" placeholder="Digite o Id...">
+            <input type="text" id="productName" placeholder="Digite o produto...">
+            <input type="number" id="productPrice" placeholder="Digite o valor...">
+
+            <span>
+                <button onclick="addProduct()">Cadastrar</button>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="boxClient" id="divClient" style="display:none">
+        <div class="box">
+            <p>Cadastrar Cliente
+            </p>
+            <input type="number" id="clientId" placeholder="Digite o Id...">
+            <input type="text" id="clientName" placeholder="Digite o nome...">
+
+            <span>
+                <button onclick="addClient()">Cadastrar</button>
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="boxOrder" id="divOrders" style="display:none">
+
+        <div class="box">
+
+            <p>Cadastrar Pedidos
+            </p>
+
+            <select name="" id="clientList">
+            </select>
+
+
+            <select name="" id="productList">
+            </select>
+
+
+            <input type="text" id="productQuantity" placeholder="Digite a quantidade">
+
+            <div class="boxButton">
+
+                <button onclick="addProductToOrder()"> Add Pedido</button>
+
+                <button onclick="closeOrder()">Fechar Pedido</button>
+            </div>
+
+
+            <table id="tblOrders">
+                <tr>
+                    <th>Id Pedido</th>
+                    <th>Nome Cliente</th>
+                    <th>Nome do Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Total</th>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="boxFooter">
+        <footer>
+            <p class="footerName">Desenvolvido por Edivania Duarte</p>
+        </footer>
+    </div>
+
+
+    <script src="./product.js"></script>
+    <script src="./client.js"></script>
+    <script src="./order.js"></script>    
+</body>
+
+</html>
