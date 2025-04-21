@@ -1,8 +1,7 @@
 # <h1 align="center"> SISTEMA DE VENDAS 💻 </h1>
 
 <h2 align="center">
-  Apresentação de sistema de vendas para teste de <br>
-  Estágio em Desenvolvimento de Sistemas.
+  Global Vendas
   <p align="center">
 
 <br>
@@ -17,7 +16,7 @@
 
 O sistema consiste no gerenciamento de clientes, produtos e pedidos, permitindo cadastrar clientes, cadastrar produtos, fechar pedidos e visualizar as vendas.
 <br>
-<br> <h4>Passo 1 -	Cadastrar Cliente:</h4>.
+<br> <h4>Passo 1 -	Cadastrar Cliente:</h4>
 •	A função <b>addClient()</b> permite adicionar um novo cliente à lista de clientes. Ela obtém o ID e o nome do cliente dos elementos HTML correspondentes e os adiciona a um objeto cliente. Esse objeto é então inserido na lista de clientes, ou seja, neste campo, há um espaço para digitar o ID e o nome do cliente e ao clicar no botão <i>cadastrar</i>, o cliente é adicionado à lista de clientes.
 <br>
 <br> 
